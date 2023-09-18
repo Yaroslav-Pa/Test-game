@@ -28,7 +28,7 @@ normal_map = ExtResource( 2 )
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="Wall4" type="Node2D" parent="."]
-position = Vector2( 638, -8.00005 )
+position = Vector2( 631, 149 )
 rotation = 4.68533
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Wall4"]
@@ -43,7 +43,7 @@ scale = Vector2( 15.8906, 0.3125 )
 texture = ExtResource( 3 )
 
 [node name="Wall3" type="Node2D" parent="."]
-position = Vector2( -381, -114 )
+position = Vector2( -387, 80 )
 rotation = -1.57351
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Wall3"]
@@ -58,7 +58,7 @@ scale = Vector2( 15.8906, 0.3125 )
 texture = ExtResource( 3 )
 
 [node name="Wall2" type="Node2D" parent="."]
-position = Vector2( -5, -283 )
+position = Vector2( 1, -184 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Wall2"]
 
@@ -72,6 +72,7 @@ scale = Vector2( 15.8906, 0.3125 )
 texture = ExtResource( 3 )
 
 [node name="Wall" type="Node2D" parent="."]
+position = Vector2( -1, 417 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Wall"]
 
