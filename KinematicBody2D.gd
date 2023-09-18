@@ -25,6 +25,10 @@ var rs_look = Vector2(0,0)
 var impulse = Vector2(0,0)
 var deadzone = 0.3
 
+func setImpulse(value):
+	impulse += value
+	
+
 func rslook():
 	rs_look.y = Input.get_joy_axis(0, JOY_AXIS_1)
 	rs_look.x = Input.get_joy_axis(0, JOY_AXIS_0)
@@ -65,11 +69,13 @@ func _physics_process(delta):
 
 		PlayerState.Dash:
 			velocity += impulse * delta 
-			impulse -= impulse * delta * 17
 			if is_on_floor():
 				state = PlayerState.Idle
 				velocity.x = 0
-
+				
+	velocity += impulse
+	
+	impulse -= impulse * delta * 17
 	velocity.y += gravity * delta
 # warning-ignore:return_value_discarded
 	move_and_slide(velocity, Vector2(0, -1))
